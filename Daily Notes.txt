@@ -1,0 +1,554 @@
+
+HTML:
+=====
+
+
+website :webpages-->static and dynamic 
+
+
+html5(2011)
+1993 tim berner lee
+html 4
+
+Hyper text markup language 
+
+		mark up--><> </>
+
+pre defined 
+.java,.css,py.....
+welcome to html
+
+
+welcome.html  IDE-->vscode,eclipse,....
+
+<!doctype html>
+<html>
+<head>
+<title>Welcome Page</title>
+<!-- include other html files,css,js,.... -->
+</head>
+
+<body>
+
+<h1>welcome to HTML  </h1>
+
+</body>
+
+</html>
+
+
+browser-->v8 engine -->DOM TREE
+
+
+
+	Form TAGS:
+	==========
+
+	<form name="login">
+	<input type="text" name="uname"></input>
+	<input type="password" name="uname"></input>
+	
+	</form>
+	
+
+CSS:3
+=====
+styles to the html page 
+
+
+	3 ways 
+	
+	1)inline css
+	2)internal css
+	3)external css-->.css   <link rel="stylesheet" href="bootstrap.css">
+	
+	
+	internal 
+	css syntax:
+			selector{propname1:provalue;propname2:provalue....}
+	
+	
+	
+	selector
+	
+			1)element selector
+			2)group selector
+			3)all selector  *
+			4)id selector   #
+			5)class selector .
+	
+	
+	Css properties
+	
+HTML-->
+CSS-->
+JS--> 	dynamic
+		front end validations			mobile :  pwd   cpwd
+		change html content
+		 change style 
+
+		dynamic typed programming 
+		java :static typed programming language
+		
+		
+		var a=123;
+		var b="xyz"
+		
+				local variables  :inside the function
+				global variables :outside the function
+		
+		functions:
+		==========
+		function addOfTwo()
+		{
+		
+		
+		}
+		
+		addOfTwo();
+		
+		
+		html
+		
+			<script>
+			var  name="welcome"
+			alert(name);
+			document.write("welcome to javascript")
+			console.log("welcome to html from console")
+			</script>
+		
+		
+		2 ways
+		
+			internal
+			<body>
+			<script>
+			
+			
+			</script>
+			
+			
+			external 
+		
+		
+		myscript.js
+
+		<head>
+		<script src="myscript.js"/>
+		</head>
+
+
+		
+		var input=document.formname.fieldname.value
+		
+		
+		var input=document.getElementById("idname").value
+	
+	Arrays:
+	=======
+	var name="ktg";
+		name="capgemini"
+				
+		var names[]={"ktg","capgemini","accenture"}
+
+			
+				index-->0
+
+			names[0]
+
+
+Front end validations:
+======================
+bootstrap
+
+
+TS:
+===
+	*Static typed programming language
+
+
+		var a=123;
+		
+			a="sandeep"
+			
+			function add(a,b)
+			{
+			a+b
+			}
+		
+			add(12,13)
+			add('b','a')
+		TS=JS+Type
+
+
+
+Angular:
+===========
+
+java script framework
+
+MPA
+	SPA 
+
+MVC :Model View Controller
+
+
+Employee-->id,name,salary
+
+		model--->view--->controller
+				 html
+
+
+html-view,css,ts-->model
+
+
+npm install -g @angular/cli
+
+ng version
+ng new projectname ----->root component (app)--->html,css,ts,spec.ts
+
+
+
+JSON:
+	{
+	
+	"eid":123,
+	"ename":"sandeep"
+	
+	
+	
+	}
+	
+	URLS:
+	======
+@Component({
+  selector: 'register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
+})
+
+	With out URLS:
+	==============
+@Component({
+  selector: 'register',
+  template: `
+  <h1>Welcome Registration Page</h1>
+  
+  `,
+  styles: [`
+  h1{color:red}
+  
+  `]
+})
+
+PIPE:
+=====
+ng g p pipename
+
+predefined 
+
+custom pipe
+
+		"|"
+
+forms:
+======
+template driven forms	:html
+
+model driven forms
+
+
+AuthGuards
+-------------
+
+
+
+
+
+
+
+Services:
+=========
+
+
+
+
+Java :
+========
+
+
+Language:
+		
+		english-->communication with human
+
+Programming Language:
+=====================
+		communication with machine
+
+
+			POP					     		OOP
+B,C,BCPL,PASCAL,COBOL,PHOTON.....			c++,java,python,.net,lisp,smalltalk...
+
+
+						1)performance   		inheritance, polymorphisam
+						
+						2)security				abstraction,encapsulation
+
+
+Why Java ?  ->OAK--coffeebean
+
+			1996 jdk 1.0  -->sun micro system -->oracle corporation -->james gosling
+			
+			2023 jdk 20
+			
+			
+			
+			jse 			jee 			jme
+			
+		JAVA:												.net :micorsoft 	
+			
+				1)Platform independent   :WORA
+				
+				2)Garbage collection	 garbage collector 
+			
+			
+			
+			machine1 			machine2     machine 3
+			
+			windows 11           linux            mac
+				
+			
+			Welcome.java
+			
+		keywords -53 	-51
+			
+			https://www.javatpoint.com/javafx-how-to-install-java
+			
+			
+			
+	https://www.eclipse.org/downloads/packages/		
+			
+Eclipse IDE for Enterprise Java and Web Developers
+
+		.java
+		
+		class 
+		
+
+Identifiers:
+===========
+
+			a-z
+			A-Z
+			0-9
+			$
+			_
+
+Variables:
+==========
+		contactnum mahesh   99324201230129
+
+variable is name given to the memory location
+
+
+					local varibles
+					global variables 
+
+				syntax:
+				
+				datatype varname=value;
+
+8PDT 				
+
+byte	1 byte			-128 to 127
+short	2 bytes			 -32768 to 32767  
+int		4 bytes			-2147483648 to 2147483647
+long 	8 bytes			 -2 power 63 to (2 power 63)-1	numeric data   byte age=30;
+
+float	4 bytes 		21.32131232135029
+double	8 bytes
+
+boolean 1 byte			true-1,false-0
+char 	2 bytes			'M' 'F'
+
+
+
+Eclipse ,myeclipse,netbeans,intellji,vscode
+
+
+									JAVA 
+					JSE 					JEE									JME				
+	corejava,awt,swings,applets   servlets,jsp,spring,spring...,webservices			Android
+	
+1)standalone/dekstop		notepad,docx,excel,eclipse,anti virus,media player
+2)web applications			gmail,amazon,flipkart.....URL
+3)distributed 				
+4)mobile 
+
+					byte age=30;
+
+
+					local varibles	:inside the method
+						
+					global variables :outside the method and inside the class
+
+								instance 
+								static 
+
+
+Syntax:
+-------
+			static int countryCode=91;
+				   float marks=900;
+Memory:
+-------
+		static properties will get memoryspace ONLY ONCE at the time of class loading into JVM.
+		
+		instance properties will get memoryspace for every object creation.
+
+				class ,object-->instance of a class 
+				
+				syntax
+						classname objname=new classname()
+
+						A obj=new A()
+Access:
+-------
+		INSTANCE PROPERTIES CAN BE ACCESSED BY USING OBJ REFERENCE 
+		STATIC PROPERTIES CAN BE ACCESSED BY USING CLASSNAME 
+Usage:
+------
+		COMMON DATA -->STATIC 	COUNTRYNAME,91,orgname,school,clgname....
+		UNIQUE DATA-->INSTANCE 	eid,contact,aadhar,bankacnt....
+
+
+
+Flow Control:
+=============
+if,else,switch,while,for,dowhile
+
+
+
+
+methods:
+=========
+
+method
+
+public static void main(String[] args) {
+
+}
+
+
+accessmodifier static/instance returntype methodname(int a,int b.....)
+{
+
+
+
+}
+
+public,private,protected,default
+
+
+
+public int addOfTwo(int a,int b)
+{
+
+return a+b;
+}
+
+public void subOfTwo(int a,int b)
+{
+System.out.println("sub of to numbers:"+(a+b));
+}
+
+public static void mulOfTwo()
+{
+int a=12;
+int b =23;
+System.out.println("sub of to numbers:"+(a*b));
+}
+
+
+package ,import ,scanner,wrapper classes
+
+
+package
+
+		predefined
+		
+		userdefined	package
+
+
+oops:
+=====
+
+						1)performance   		inheritance, polymorphisam
+						
+						2)security				abstraction,encapsulation
+
+
+inheritance:
+============
+	the process of aquiring the features from one class to another class.
+
+
+			extends ,implements
+
+Code Reusability
+
+class Hello{
+
+//100 methods
+
+
+}
+
+
+class Hi extends Hello{
+
+//20 methods
+
+
+}
+
+Multiple Inheritance:
+=====================
+	MI Not supported by java through classes
+	MI Supported by java through interfaces 
+
+
+methods
+
+	abstract 		:a method without body/implemnetation/logic
+	non-abstract 	:a method with implemnetation/logic/body
+
+abstraction:
+
+	process of hiding internals by showcasing functionalties
+
+
+	ATM
+
+
+class			:class is a collection of only concrete methods
+
+abstract class	:abstract class is combination both abstract and concrete methods 0-100
+interface		:its collection of only abstract methods
+
+
+		MI
+polymorphisam
+encapsulation
+
+
+
+
+
+
+
+
+
+
+
+
