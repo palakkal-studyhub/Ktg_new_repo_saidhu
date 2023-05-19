@@ -537,11 +537,191 @@ abstract class	:abstract class is combination both abstract and concrete methods
 interface		:its collection of only abstract methods
 
 
-		MI
-polymorphisam
+		MI  :extends
+			
+				interface A         interface B
+				{					{
+				
+				m1();				m1();
+				}					}
+		
+			class C implements A,B
+			{
+				C c=new C();
+				c.m1()
+			
+			m1()
+			{
+			
+			
+			}
+		
+			}
+		
+		
+polymorphisam:
+==============
+many forms 
+
+
+		method overloading
+				
+				
+					method name is same signature is different
+											no of params
+											order of params
+											type of params
+		
+		method overriding 
+
+		method name is same and implementation is different 
+		
+		@Override 
+		
+		
+	this,super,final,public,private,protected,default,constructor,encapsulation	
+		
+		
+		
+		this	:current class properties (variable,method,object,constructor)
+		
+		super	:parent class properties(variable,method,constructor)
+		
+		
+		
+	constructor:
+================	
+		1)create object/instantiation of class
+		
+		2)values for instance variables
+		
+		
+		
+		public int add(int a ,int b )
+		{
+		return a+b;
+		}
+		
+		1)constructor never return 
+		2)constructor name must be class name 
+		3)constructor can be called automatically at the time object creation
+		
+
+Encapsulation:
+=============
+	binding the data and methods together 
+	
+	Employee
+	
+	eid
+	ename
+	esal
+	eadd...		private data 
+	
+	
+	and public setters and getters
+	
+	
+	
+	
+	
+		
+Exception Handling:
+====================
+//with out exception handling		
+		
+		//system defined error messages
+		//abnormal termination
+		
+		
+//With exception handling 
+		
+		// user friendly error messages 
+		//normal  termination
+
+		try ,catch,finally,throw,throws
+
+
+
+
+multi threading :
+=================
+
+
+
+
+
+Colections:
+==============
+
+
+
+
+
+java8:
+======
+		
+		
+		
+		
+database(MYsql)
+===============
+
+
+JDBC:
+=====
+
+
+
+spring ..springboot...case study:
+=================================
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 encapsulation
 
-
+	
 
 
 
