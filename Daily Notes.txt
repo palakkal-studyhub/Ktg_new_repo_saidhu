@@ -647,81 +647,382 @@ Exception Handling:
 multi threading :
 =================
 
+muli tasking:
 
-
-
+			Process based multi tasking 
+					
+					Executing several tasks simultaniously where each task is seperate independent process 
+				
+					Ex:using eclipse,teams,vscode .....
+				
+			Thread based multi tasking :multi threading 
+				
+				Executing several tasks simultaniously where each task belongs to the same process 
+	
+	class Test
+	{
+	
+	segment 1
+	
+	
+	
+	segment 2
+	
+	
+	
+	
+	segment n
+	}
+	
+	
+	two ways
+	
+	1.implements Runnable interface 
+	2.extends Thread class
+	
+	
+	class App implements Runnable (FI-->SAM--run)
+	{
+		run()
+		{
+		
+		
+		}
+	
+	}
+	
+	
+	https://www.javamadesoeasy.com/2015/03/thread-states-thread-life-cycle-in-java.html
+	
+	
+	
+	
+	public void m1()
+	{
+			sleep()						t1,t2,t3,t4
+	
+	}
+	
+	public synchronized void m1()  
+	{
+	//t1
+		
+	
+	}
+	
+	Inter Thread Communication:
+	===========================
+	
+	Object -->wait,notify,notifyAll
+	
+	1-100
+	
+	
+	
+	thread-1 -->even numbers -->2,4,6,8,10...wait(),notify
+	
+	thread-2 -->odd numbers  -->1-->notify,wait(),3,5,7,9....
+	
 
 Colections:
 ==============
+	int marks=200;
+		marks=300;
 
+int marks1[]={200,300,400,500....}
 
+	int arr[]=new int[10];//11th AIOE
 
+Arrays Limitations:
+====================
 
+	1)arrays are used to store only homogeneous data
 
+	2)arrays are fixed in size 
+
+	3)no utility methods
+	
+Collections Advantages:
+====================
+
+	1)collections are used to store both homogeneous,heterogeneous data
+
+	2)collections  are not  fixed in size   AL-->10,16(cc*3/2)+1
+
+	3)lots utility methods	
+	
+	List:
+	
+		1)duplicates are allowed
+		2)insertion order is preserved 
+	
+			ArrayList,LinkedList,Vector,Stack
+	Set:
+	
+		1)duplicates are not allowed
+		2)insertion order is not preserved 
+	
+					HashSet,LinkedHashSet,TreeSet
+			
+		stack-->filo
+		queue-->fifo
+		
+		
+		
+		vector-10 synchronized--> AL-10  
+
+MAP:
+					HashMap,LinkedHashMap,TreeMap
+					
+			key,value
+					
+					
+					
+					
+					
 java8:
 ======
+		lamda expressions
+		FI
+		P FI
+		Default staitic methods
+		:: OPERATORS
+		datatime api
+		stream api
+		
+				flow of data 
 		
 		
-		
-		
-database(MYsql)
-===============
+Datbase :
+=========
+MYSQL:
+======
+SQL-->structured query language
+
+DDL,DML,DRL
+
+DDL-->create,alter,drop,truncate,rename
+
+DML-->insert,update,delete
+
+DRL-->select
+
+RDBMS
+		create database ktg;
+use ktg;
+create table emps(eid int,ename varchar(15),esal int,eadd varchar(10));
+alter table emps add edesg varchar(10);
+describe emps;
+alter table emps drop column eadd;
+alter table emps change eid empno int;
+alter table emps rename to employees;
+#DML
+insert into employees values(111,'suresh',90000,"developer");
+insert into employees values(222,'rajesh',45000,"trainer");
+insert into employees values(333,'somesh',65000,"admin");
+insert into employees values(444,'hitesh',78000,"hr");
+
+update employees set esal=esal+5000 where esal<75000;
+update employees set esal=esal+15000;
+
+delete from employees; 
+delete from employees where edesg='admin';
+#DRL
+select * from employees;
+select empno,ename from employees;
+select * from employees where edesg='developer';
+truncate table employees;
+drop table employees;
+select max(esal) from employees;
+select min(esal) from employees;
+select sum(esal) from employees;
+select avg(esal) from employees;
+select count(esal) from employees;
+
+JDBC/JPA:
+========
+		java-->database 
+
+			JDBC
+			
+			5 steps 
+			
+			1)load the driver class
+			2)create the connection
+			3)create the statement
+			4)execute query
+			5)close the connection
+			
+			
+			
+JPA(Java Persistence API):
+==========================
+Problems with JDBC 
+
+1)create tables 
+2)querys
+3)checked exceptions
+4)boiler plate code 
 
 
-JDBC:
-=====
+
+JPA-->Specification
+hibernate-->ORM tools-->hibernate,eclipse,toplink,ibatis...
 
 
+				JAVA--->JPA-->hibernate-->DB
+			
+1)no tables creation 
+2)no querys
+3)unchecked exceptions
+4)boiler plate code removed
+
+
+
+JPA
+
+
+
+Entity class
+
+	jpa annotations
+	
+main method class
+
+META-INF
+persistence.xml	
+
+
+JPA --->persist,merge,remove,find
+
+JPQL-->querys-->database independent 
+
+			
 
 spring ..springboot...case study:
 =================================
 
+Spring :
+===========
+	invasive,noninvasive
+	light weight ,heavy weight
+	loosley coupled,tightly coupled
+
+		spring is non-invasive framework,we can create light wieght and loosley coupled application
+		
+		
+		
+		
+		invasive: struts :force to developer to implement predefined api
+		non-invasive:hibernate,spring :never force to the developer to implement predefined API
+		
+		
+		
+		
+		thread-->extends thread,implements runnable
+		
+		
+		Servlet:web application
+		
+				1)implements Servlet 5
+				2)extends GenericServlet
+				3)extends HttpServlet 5+6=11
+		
+		100*11
+		class login extends HttpServlet
+		{ 11
+		
+		}
+		
+		EJB heavy weight  -->Rod Johnson--->spirng -->2003 1.x----> 6.x spring ,3.x spring boot
+		
+		
+		
+		Loosley coupled & tightly coupled 
+
+class A
+{
+A(String name){
+}
+public void m1()
+{
+
+}
+
+}
+		tightly coupled ,loosley coupled ---->spring
+class B 
+{
+public void m2()
+{
+A a =new A();
+a.m1()
+
+}
+}
+ 1000 child class
 
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+Spring core/IOC/Dependency Injection module
+===========================================
+
+		1)setter injection			<property>
+		2)constructor injection		<constructor-arg>
+		3)Autowiring 
 
 
 
+			Spring container:BeanFactory,ApplicationContext
 
-
-
-
-
-
-
-
-
-
-
-
-
-encapsulation
-
+		life cyle a object
+				
+					1)creation of object
+					2)wiring the object
+					3)configuring the object
+					4)destroying the object
 	
+A,B...											configuration file--->xml,annotation,java
+
+			spring jars												<beans>
+																	<bean>
+				
+		@Component,@Service,@Repository,@Autowired,@Configration,@ComponentScan
+
+		@Bean
+
+		NOTE:spring has given annotations for user defined classes but not for predefined classes
+						
+						for predefined classes we have to configure explicitly 
+						@Bean
+
+spring light weight and loosley coupled
+
+jpa is light wieght but not loosley 
+
+
+
+
+
+1)configuration
+
+2)maven dependencies
+
+3)server
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
